@@ -64,7 +64,7 @@ export default function Home() {
         <title>DOI to Abstract</title>
         <meta
           name="description"
-          content="App that returns reseach article abstract based on article DOI"
+          content="Web app that returns research article abstract based on article DOI"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -82,7 +82,7 @@ export default function Home() {
             <Space h="lg" />
 
             <Text fz="lg">
-              Input the DOI of a research article to get the abstract
+              Input the DOI of a research article to get the abstract:
             </Text>
 
             <Space h="sm" />

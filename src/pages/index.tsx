@@ -14,6 +14,8 @@ import DOIInput from "~/components/DOIInput";
 import ErrorMessage from "~/components/ErrorMessage";
 import Article from "~/components/Article";
 
+import { removeItalicTags } from "~/utils/formatting/removeItalicTags";
+
 interface AbstractData {
   title: string;
   abstract: string;
@@ -53,7 +55,7 @@ export default function Home() {
         setError("");
       }
       // set article title and abstract
-      setArticleTitle(data.title);
+      setArticleTitle(removeItalicTags(data.title));
       setAbstract(data.abstract);
     }
   };
